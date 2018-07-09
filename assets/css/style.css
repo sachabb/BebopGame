@@ -1,0 +1,141 @@
+/*---------------------*/
+/* Body and background */
+/*---------------------*/
+body {
+  background-color: #262533;
+  color: #c9c6c1;
+}
+
+header {
+  font-size: 50px;
+  text-align: center;
+  padding: 20px;
+}
+
+#logo {
+  height: 250px;
+}
+.characterWrapper {
+  width: 75%;
+  margin-right: auto;
+  margin-left: auto;
+}
+#gameMessage {
+  text-align: center;
+  font-size: 25px;
+  color: #333333;
+}
+#choose-enemy-button {
+  visibility: hidden;
+}
+#restart-button {
+  visibility: hidden;
+}
+#turn-counter {
+  font-size: 150%;
+}
+
+/*---------------------*/
+/* Character rendering */
+/*---------------------*/
+.character {
+  background-color: black;
+  width: 125px;
+  margin: 0px 40px 0px 40px;
+  cursor: crosshair;
+  display: inline-block;
+}
+.character img {
+  border: 0 none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 200px;
+}
+.character-name {
+  font-family: 'Arbutus Slab', serif;
+  text-align: center;
+  text-transform: capitalize;
+  line-height: 30px;
+  font-size: 20px;
+}
+.character-health {
+  text-align: center;
+}
+
+/*---------------------*/
+/*      Fighting       */
+/*---------------------*/
+.attack {
+  text-align: center;
+}
+.action {
+  margin: 15px 0px;
+}
+#attack-button{
+	visibility: hidden;
+}
+.btn {
+	background: #FF4500;
+	color: #333333;	
+}
+.enemy {
+	width: 153px;
+	margin: 5px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  border-radius: 15px 35px 30px;
+  cursor: pointer;
+  display: inline-block;
+  background-color:#FF4500;
+  float: left;
+}
+#attacker {
+	padding: 5px;
+}
+.target-enemy {
+  background-color: black;
+}
+
+/*---------------------*/
+/* Available Oponents  */
+/*---------------------*/
+#available-to-attack-section {
+  float: right;
+}
+#available-to-attack-section img {
+	height: 100px;
+}
+
+/*---------------------*/
+/*      Defender       */
+/*---------------------*/
+
+/*#defender {
+  width: 190px;
+  height: 160px;
+}*/
+#defender-name {
+  text-align: center;
+}
+#defender-image {
+  padding: 0px 16px;
+  margin: 3px 0px;
+}
+#defender-health {
+  text-align: center;
+}
+
+/*---------------------*/
+/*   Media Queries     */
+/*---------------------*/
+@media only screen and (max-device-width: 768px) {
+  .character {
+    display: block;
+  height: 150px;    
+  }
+  #gameMessage {
+  font-size: 12px;
+  }
+}
